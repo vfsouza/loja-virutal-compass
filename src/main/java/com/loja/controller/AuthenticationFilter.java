@@ -1,4 +1,4 @@
-package com.loja.dao;
+package com.loja.controller;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
