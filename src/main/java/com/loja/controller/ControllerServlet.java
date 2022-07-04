@@ -18,8 +18,8 @@ public class ControllerServlet extends HttpServlet {
 
         Order order = retrieveOrder(request);
 
-        double shipping = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState())) * 50;
-        double deliveryTime = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState())) * 4;
+        double shipping = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState()) + 1) * 50;
+        double deliveryTime = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState()) + 1) * 4;
 
         OrderDAO.insert(order);
 
