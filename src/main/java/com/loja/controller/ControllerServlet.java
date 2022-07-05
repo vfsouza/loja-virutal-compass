@@ -19,9 +19,9 @@ public class ControllerServlet extends HttpServlet {
         Order order = retrieveOrder(request);
 
         double shipping = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState()) + 1) * 50;
-        double deliveryTime = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState()) + 1) * 4;
+        int deliveryTime = Math.abs(States.map.get(order.getPostalCode()) - States.map.get(order.getState()) + 1) * 4;
 
-        OrderDAO.insert(order);
+        OrderDAO.insert(order, shipping, deliveryTime);
 
         if (action.equalsIgnoreCase("json")) {
             response.setContentType("application/json");

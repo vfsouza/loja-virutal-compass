@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="913ce122-f7ad-4035-b2da-a2dc6c72c790" name="Changes" comment="Initial commit">
+    <list default="true" id="913ce122-f7ad-4035-b2da-a2dc6c72c790" name="Changes" comment="Fix: Corrigido um bug no cálculo do frete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/loja/controller/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loja/controller/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/loja/dao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/loja/dao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1656915172266</updated>
       <workItem from="1656915173456" duration="4324000" />
-      <workItem from="1656926734746" duration="94000" />
+      <workItem from="1656926734746" duration="152000" />
+      <workItem from="1656986239749" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1656919509265</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656919509265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix: Corrigido um bug no cálculo do frete">
+      <created>1656926872140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656926872140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Fix: Corrigido um bug no cálculo do frete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: Corrigido um bug no cálculo do frete" />
   </component>
 </project>

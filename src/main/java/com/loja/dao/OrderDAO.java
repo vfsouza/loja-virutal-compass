@@ -10,10 +10,10 @@ import java.sql.Statement;
 public class OrderDAO {
     private static final Connection con = ConnectionFactory.conectar();
 
-    public static void insert(Order o) {
+    public static void insert(Order o, double shipping, int deliveryTime) {
         try {
             Statement st = con.createStatement();
-            st.executeUpdate("INSERT INTO `order` (`name`, street, `number`, city, state, price, postalCode, productId) VALUES (" +
+            st.executeUpdate("INSERT INTO `order` (`name`, street, `number`, city, state, price, postalCode, productId, deliveryTime, shippingPrice) VALUES (" +
                     "'" + o.getName() +
                     "', '" + o.getStreet() +
                     "', '" + o.getNumber() +
@@ -21,7 +21,9 @@ public class OrderDAO {
                     "', '" + o.getState() +
                     "', " + o.getPrice() +
                     ", '" + o.getPostalCode() +
-                    "', " + o.getProductId() + ");");
+                    "', " + o.getProductId() +
+                    ", " + deliveryTime +
+                    ", " + shipping + ");");
         } catch (SQLException e) {
             System.out.println(e.getLocalizedMessage());
         }

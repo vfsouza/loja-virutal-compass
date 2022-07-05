@@ -10,8 +10,10 @@
         </h1>
         <br/>
         <form action="registration" target="_blank">
-            <label for="name">Name</label>
+            <label for="name">Username</label>
             <input type="text" name="name" id="name">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password">
             <br/>
             <label for="street">Street</label>
             <input type="text" name="street" id="street">
@@ -26,7 +28,7 @@
             <input type="text" name="price" id="price">
             <label for="productId">Product ID</label>
             <input type="text" name="productId" id="productId">
-            <label for="postalCode">Delivery postal code</label>
+            <label for="postalCode">Delivery state</label>
             <input type="text" name="postalCode" id="postalCode">
             <br/>
             <input type="submit" name="action" value="JSON">
